@@ -1,0 +1,195 @@
+body,html{
+    height: 100%;
+    color: white;
+    background-image: url(/images/rm314-bb-18.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+}
+.row1{
+    position: fixed;
+}
+.navbar{
+    /* background-color: black; */
+    border-radius: 30px;
+  width: 95vw;
+  }
+.navbar li{
+    float:right;
+    list-style: none; 
+    margin: 13px 20px;
+}
+.navbar ul{
+    overflow: auto;
+}
+.navbar li a{
+    padding: 3px 3px;
+    text-decoration: none;
+    color: white;
+}
+.search{
+    float: left;
+    color: white;
+    padding: 12px 75px;
+    transition: 0.3s;
+}
+#title{
+    cursor: pointer;
+    transform: scale(1.5);
+}
+.navbar li a:hover{
+    color: #01FFFF
+}
+@font-face {
+    font-family: racefont;
+    src: url(/images/RaceSport-BWPLV.ttf);
+}
+@font-face {
+    font-family: revamped;
+    src: url(/images/Revamped-X3q1a.ttf);
+}
+#title{
+    color: #01FFFF;
+    font-family: racefont;
+    font-weight: 100;
+    font-size: 1em;
+}
+#title_text{
+    color :#0baa62;
+    font-family: revamped ;
+    font-weight: 300;
+    font-size: 4em;
+    text-shadow: 1.5px 1px 1px #01FFFF ;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.container{
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    line-height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ 
+}
+.logo_space{
+    display: grid;
+    grid-row-start: 1 ;
+    grid-row-end: 3;
+    place-items: center;
+}
+#Atom_logo{
+    height: 200px; 
+    width : 200px ;
+}
+h2{
+    line-height: 1em;
+    font-family: racefont;
+    font-weight: 100;
+    
+}
+#Psgtech_logo{
+    height: 200px; 
+    width : 200px ;
+}
+#Ieee_logo{
+    height: 200px; 
+    width : 200px
+}
+.social_links{
+    position: absolute;
+    float: right;
+    top: 50vh;
+    left: 3%;
+    display: grid;
+    row-gap: 10px;
+}
+.row3 i{
+    font-size: 2em;
+    transition: 0.3s;
+}
+i:hover{
+    transform: translate(10px, 0px);
+    color: #01FFFF;
+}
+
+
+@media screen and (max-width : 800px) {
+    body{
+        display: grid;
+        grid-row-start: 1;
+        grid-row-end: 3;
+        align-items: center;
+        justify-content: center; 
+    }
+    .row1{
+        position: static;
+    }
+    ul{
+        position: static;
+        display: grid;
+        grid-row-start: 1;
+        grid-row-end: 6;
+        align-items: center;
+        justify-content: center;
+        padding: 0px;
+    }
+    li{
+      text-align: center;  
+    }
+    .clg_logo{
+        position: static;
+        display: grid;
+        grid-row-start: 1;
+        grid-row-end: 3;
+        row-gap: 1em;
+        align-items: center;
+        justify-content: center;
+        place-items: center;
+        padding: 0px;
+    }
+    #Psgtech_logo,#Ieee_logo,#Atom_logo{
+        width: 100px;
+        height: 100px;
+    }
+    .clg_logo h2{
+        font-size: 1em;
+    }
+    #title_text{
+        font-size: 2em;
+    }
+    .logo_space{
+        position: static;
+        display: grid;
+        grid-row-start: 1;
+        grid-row-end: 2;
+        row-gap: 1em;
+        align-items: center;
+        justify-content: center;
+        place-items: center;
+        padding: 0px;
+    }
+    .row3{
+        text-align: center;
+    }
+    .social_links{
+        position: static;
+        display: flex;
+        column-gap: 1em;
+        align-items: center;
+        justify-content: center;
+        place-items: center;
+        padding: 0px;
+        float: none;
+    }
+    .row3 i{
+        font-size: 1em;
+        transition: 0.3s;
+    }
+}
