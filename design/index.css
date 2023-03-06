@@ -1,0 +1,185 @@
+body,html{
+    height: 100%;
+    color: white;
+    background-image: url(/PROJECTS/atom/images/rm314-bb-18.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+.container{
+
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    line-height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ 
+}
+.countdown{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#countdown_list{
+    list-style: none;
+    display: flex;
+    column-gap: 10px;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    flex: 1;
+    font-family: racefont;
+}
+#Atom_logo{
+    width: 200px;
+    height: 200px;
+}
+.logo_space{
+    display: grid;
+    grid-row-start: 1 ;
+    grid-row-end: 3;
+    place-items: center;
+}
+@font-face {
+    font-family: racefont;
+    src: url(/PROJECTS/atom/images/RaceSport-BWPLV.ttf);
+}
+#title_text{
+    color :#0baa62;
+    font-family: revamped ;
+    font-weight: 300;
+    font-size: 4em;
+    text-shadow: 1.5px 1px 1px #01FFFF ;
+}
+@font-face {
+    font-family: revamped;
+    src: url(/PROJECTS/atom/images/Revamped-X3q1a.ttf);
+}
+#come_soon{
+    font-family: racefont;
+    font-size: 2em;
+    font-weight: 400;
+    color: #01FFFF;
+}
+.list_item .timenumbers{
+    flex: 1;
+    padding: 5px 15px;
+    border: 1px solid #0baa62;
+    border-radius: 50px;
+    font-weight: 100;
+    font-size: .8em;
+}
+.list_item .timedes{
+    font-weight: 100;
+    font-size: .9em;
+}
+.homepage_link{
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* padding: 5px 5px; */
+    border: 1px solid #0baa62;
+    border-radius: 50px;
+}
+i{
+    position: relative;
+    top: -1px;
+    font-size: 2em;
+    color: #01FFFF;
+    transition: 0.3s;
+}
+.homepage_link:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+
+}
+i:hover{
+    transform: translate(10px, 0px);
+}
+.homepage_link p{
+    color: #01FFFF;
+    font-family: racefont;
+    font-weight: 100;
+    font-size: 1em;
+}
+.row1{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    place-items: center;
+}
+a{
+    text-decoration: none;
+}
+@media screen and (max-width : 800px) {
+    body{
+        padding-top: 10%;
+        padding-bottom: 10%;
+    }
+    .row1{
+        display: grid;
+        grid-row-start: 1;
+        grid-row-end: 3;
+        align-items: center;
+        justify-content: center; 
+    }
+    .row1{
+        position: static;
+    }
+    #countdown_list{
+        position: static;
+        display: grid;
+        grid-row-start: 1;
+        grid-row-end: 4;
+        row-gap: 2em;
+        align-items: center;
+        justify-content: center;
+        padding: 0px;
+    }
+    li{
+      text-align: center;  
+    }
+    #Atom_logo{
+        width: 150px;
+        height: 150px;
+    }
+    #title_text{
+        font-size: 2em;
+    }
+    #come_soon{
+        font-size: 2em;
+    }
+    .logo_space{
+        position: static;
+        display: grid;
+        grid-row-start: 1;
+        grid-row-end: 3;
+        row-gap: 1em;
+        align-items: center;
+        justify-content: center;
+        place-items: center;
+        padding: 0px;
+    }
+    .social_links{
+        position: static;
+        display: flex;
+        column-gap: 1em;
+        align-items: center;
+        justify-content: center;
+        place-items: center;
+        padding: 0px;
+        float: none;
+    }
+    i{
+        position: static;
+        /* top: -1px; */
+        font-size: 2em;
+        color: #01FFFF;
+        transition: 0.3s;
+    }
+}
